@@ -6,7 +6,8 @@ RUN apt-get update && \
 	apt-get install -y net-tools \
 	tcpdump \
 	iperf3 \
-	iftop
+	iftop \
+	ethtool
 
 CMD ["/bin/bash"]
 
