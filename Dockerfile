@@ -7,7 +7,8 @@ RUN apt-get update && \
 	tcpdump \
 	iperf3 \
 	iftop \
-	ethtool
+	ethtool \
+	netcat
 
 CMD ["/bin/bash"]
 
