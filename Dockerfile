@@ -3,9 +3,10 @@ FROM ubuntu:16.04
 MAINTAINER hwchiu@linkernetworks.com
 
 RUN apt-get update && \
-	apt-get install net-tools
-
-
+	apt-get install -y net-tools \
+	tcpdump \
+	iperf3 \
+	iftop
 
 CMD ["/bin/bash"]
 
