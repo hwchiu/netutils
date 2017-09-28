@@ -8,7 +8,8 @@ RUN apt-get update && \
 	iperf3 \
 	iftop \
 	ethtool \
-	netcat
+	netcat \
+    ping
 
 CMD ["/bin/bash"]
 
