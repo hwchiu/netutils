@@ -9,7 +9,9 @@ RUN apt-get update && \
 	iftop \
 	ethtool \
 	netcat \
-    iputils-ping
+    iputils-ping \
+    wget \
+    curl
 
 CMD ["/bin/bash"]
 
