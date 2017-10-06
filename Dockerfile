@@ -12,7 +12,7 @@ RUN apt-get update && \
     iputils-ping \
     wget \
     curl \
-    ip
+    iproute2
 
 CMD ["/bin/bash"]
 
