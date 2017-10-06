@@ -11,7 +11,8 @@ RUN apt-get update && \
 	netcat \
     iputils-ping \
     wget \
-    curl
+    curl \
+    ip
 
 CMD ["/bin/bash"]
 
