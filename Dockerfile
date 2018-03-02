@@ -12,7 +12,8 @@ RUN apt-get update && \
     iputils-ping \
     wget \
     curl \
-    iproute2
+    iproute2 \
+    redis-tools
 
 CMD ["/bin/bash"]
 
