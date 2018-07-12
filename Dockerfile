@@ -13,7 +13,8 @@ RUN apt-get update && \
     wget \
     curl \
     iproute2 \
-    redis-tools
+    redis-tools \
+    dnsutils
 
 CMD ["/bin/bash"]
 
