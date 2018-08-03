@@ -16,5 +16,5 @@ RUN apt-get update && \
     redis-tools \
     dnsutils
 
-CMD ["/bin/bash"]
-
+COPY entrypoint.bash ./
+ENTRYPOINT ["/bin/bash", "./entrypoint.bash"]
