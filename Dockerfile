@@ -14,7 +14,8 @@ RUN apt-get update && \
     curl \
     iproute2 \
     redis-tools \
-    dnsutils
+    dnsutils \
+    telnet
 
 COPY entrypoint.bash ./
 ENTRYPOINT ["/bin/bash", "./entrypoint.bash"]
