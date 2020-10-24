@@ -5,6 +5,7 @@ MAINTAINER hwchiu@linkernetworks.com
 RUN apt-get update && \
 	apt-get install -y net-tools \
 	tcpdump \
+    vim \
 	iperf3 \
 	iftop \
 	ethtool \
