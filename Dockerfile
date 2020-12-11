@@ -1,6 +1,6 @@
 #####
 FROM ubuntu:16.04
-MAINTAINER hwchiu@linkernetworks.com
+MAINTAINER hungwei@opennetworking.org
 
 RUN apt-get update && \
 	apt-get install -y net-tools \
@@ -17,7 +17,7 @@ RUN apt-get update && \
     redis-tools \
     dnsutils \
     telnet \
-    git 
+    git
 
 COPY entrypoint.bash ./
 ENTRYPOINT ["/bin/bash", "./entrypoint.bash"]
