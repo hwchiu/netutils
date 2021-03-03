@@ -1,15 +1,16 @@
-#####
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER hungwei@opennetworking.org
 
-RUN apt-get update && \
-	apt-get install -y net-tools \
-	tcpdump \
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt update && \
+    apt install -y --no-install-recommends \
+    net-tools \
+    tcpdump \
     vim \
-	iperf3 \
-	iftop \
-	ethtool \
-	netcat \
+    iperf3 \
+    iftop \
+    ethtool \
+    netcat \
     iputils-ping \
     wget \
     curl \
@@ -17,7 +18,8 @@ RUN apt-get update && \
     redis-tools \
     dnsutils \
     telnet \
-    git
+    git \
+    tcpreplay \
+    dumb-init
 
-COPY entrypoint.bash ./
-ENTRYPOINT ["/bin/bash", "./entrypoint.bash"]
+ENTRYPOINT ["dumb-init"]
